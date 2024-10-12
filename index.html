@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + Tailwind CSS</title>
+  </head>
+  <body>
+    <header class="bg-[#000000] py-7">
+      <nav class="container flex justify-between items-center">
+        <div>
+          <img
+            class="hidden tablet:block"
+            src="./images/Logo (14).svg"
+            alt=""
+          />
+          <img class="tablet:hidden" src="./images/Vector.svg" alt="" />
+        </div>
+        <div>
+          <ul class="hidden tablet:flex tablet:gap-10">
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Solution</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                href="#"
+                >Features</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hidden tablet:flex tablet:gap-10 tablet:items-center">
+          <a
+            class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+            href="#"
+            >Login</a
+          >
+          <button
+            class="text-[18px] flex items-center font-normal leading-[18px] text-[#000000] w-[129px] h-[42px] p-[12px_32px] gap-[10px] rounded-[40px] bg-[#FFFFFF]"
+          >
+            Register
+          </button>
+        </div>
+
+        <div class="menu relative">
+          <div class="menu-icon tablet:hidden" onclick="toggleMenu()">
+            <img src="./images/icon.svg" alt="menu" />
+          </div>
+          <div
+            class="menu-content hidden fixed top-0 left-0 right-0 bottom-0 bg-black flex flex-col justify-center items-center z-50 transition-all duration-300"
+            id="menu-content"
+          >
+            <span
+              class="close-btn flex justify-between items-center w-full p-5 px-5 absolute top-0"
+              onclick="toggleMenu()"
+            >
+              <img src="./images/Vector.svg" alt="" />
+              <img src="./images/x.svg" alt="close" />
+            </span>
+            <ul class="gap-10 flex flex-col text-center mt-16">
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Solution</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-[18px] font-normal leading-[18px] text-[#FFFFFF]"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+            </ul>
+            <div class="items-center mt-5 text-center">
+              <a
+                class="text-[18px] font-normal leading-[18px] text-[#FFFFFF] px-10"
+                href="#"
+                >Login</a
+              >
+              <div class="my-4">
+                <button
+                  class="text-[18px] flex items-center font-normal leading-[18px] text-[#000000] w-[129px] h-[42px] p-[12px_32px] gap-[10px] rounded-[40px] bg-[#FFFFFF]"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg-[#000000]">
+      <div class="container py-[56px] tablet:py-[100px]">
+        <h1
+          class="text-[36px] font-extrabold leading-[40.32px] text-[#FFFFFF] tablet:text-[72px] tablet:font-extrabold tablet:leading-[80.64px] text-center"
+        >
+          Minimize your tabs. <br />
+          Find the trends!
+        </h1>
+        <p
+          class="text-[18px] font-normal leading-[27px] text-center text-[#8B8B8B] py-6"
+        >
+          Don’t let your computer memories consumes all of those browser tabs.
+          <br />
+          Findtrend let you gathers all of your <br class="tablet:hidden" />
+          favorite website into one place.
+        </p>
+        <div class="flex items-center justify-center py-10">
+          <button
+            class="text-[18px] font-bold leading-[25.2px] text-center w-[180px] h-[57px] top-[478px] left-[630px] p-[16px_32px] gap-[10px] rounded-[40px] bg-[#A8FF35] text-[#000000]"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="grid py-[50px] place-items-center tablet:py-[70px] grid-cols-1 tablet:grid-cols-3"
+        >
+          <img src="./images/Group 9.png" alt="" />
+          <img src="./images/Group 9.png" alt="" />
+          <img src="./images/Group 9.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#A8FF35] py-[100px]">
+      <div class="container">
+        <h2
+          class="text-[33px] font-bold leading-[40.32px] tablet:text-[72px] tablet:font-bold tablet:leading-[85.54px] text-center"
+        >
+          Open new tabs is sh*t
+        </h2>
+
+        <div class="flex justify-center items-center py-[100px]">
+          <img src="./images/img.png" alt="" />
+        </div>
+        <p
+          class="text-[14px] tablet:text-[18px] font-normal leading-[27px] text-center text-[#000000]"
+        >
+          A solution for your browser tabs and don’t make
+          <br class="tablet:hidden" />
+          your device get slower over time. Get <br />
+          ease and faster to discover a trend with just one tab.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="container py-[120px]">
+        <h2
+          class="text-[36px] tablet:text-[64px] font-black tablet:font-bold leading-[76.03px] text-left text-[#000000]"
+        >
+          Findtrend helps you <br class="tablet:hidden" />
+          to increase your <br />
+          productivity and <br class="tablet:hidden" />
+          reduce your computer's <br class="tablet:hidden" />
+          memory load, <br />
+          <span class="text-[#ADADAD]"
+            >an application that can fulfill <br />
+            your daily browsing needs.</span
+          >
+        </h2>
+      </div>
+    </div>
+
+    <div>
+      <div class="container py-32">
+        <h2
+          class="text-[36px] tablet:text-[64px] font-bold leading-[76.03px] text-center text-[#000000]"
+        >
+          Findtrend make +1000 Startup grow
+        </h2>
+        <div class="grid gap-4 grid-cols-2 py-[70px] tablet:grid-cols-4">
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+          <img src="./images/1.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#FAFAFA] py-24">
+      <div class="container">
+        <h2
+          class="text-[36px] tablet:text-[64px] font-bold leading-[76.03px] text-center text-[#000000]"
+        >
+          All platform connect to Findtrend
+        </h2>
+        <div
+          class="grid grid-cols-4 place-items-center justify-center tablet:grid-cols-8 py-24"
+        >
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hidden tablet:flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hidden tablet:flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+          <div
+            class="bg-[#FFFFFF] w-32 h-32 rounded-[20px] justify-center items-center flex hidden tablet:flex hover:bg-[#A8FF35]"
+          >
+            <img src="./images/image 96.svg" alt="" />
+          </div>
+        </div>
+        <div class="justify-center flex flex-col py-10 gap-[41px]">
+          <img class="hidden tablet:block" src="./images/tweet 1.png" alt="" />
+          <img class="hidden tablet:block" src="./images/tweet 2.png" alt="" />
+          <img class="hidden tablet:block" src="./images/tweet 3.png" alt="" />
+
+          <img class="tablet:hidden" src="./images/4.png" alt="" />
+          <img class="tablet:hidden" src="./images/5.png" alt="" />
+          <img class="tablet:hidden" src="./images/6.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menuContent = document.getElementById("menu-content");
+        menuContent.classList.toggle("hidden");
+      }
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
